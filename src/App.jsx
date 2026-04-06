@@ -51,7 +51,7 @@ function App() {
             <button type="button" className="btn-primary">Explore Our Range</button>
           </div>
           <div className="hero-image-wrapper">
-            <img src="/images/hero.png" alt="Traditional Indian Pickles" className="hero-image" onError={(e) => e.target.src = 'https://images.unsplash.com/photo-1627308595171-d1b5d67817eb?q=80&w=1000&auto=format&fit=crop'} />
+            <img src={`${import.meta.env.BASE_URL}images/hero.png`} alt="Traditional Indian Pickles" className="hero-image" onError={(e) => e.target.src = 'https://images.unsplash.com/photo-1627308595171-d1b5d67817eb?q=80&w=1000&auto=format&fit=crop'} />
             <div className="hero-image-overlay"></div>
           </div>
         </div>
@@ -67,7 +67,7 @@ function App() {
           <div className="products-grid">
             <div className="product-card">
               <div className="product-image-container">
-                <img src="/images/mango.png" alt="Mango Pickle" className="product-image" onError={(e) => e.target.src = 'https://images.unsplash.com/photo-1596647970717-3d9fc2c1e8d9?q=80&w=600&auto=format&fit=crop'} />
+                <img src={`${import.meta.env.BASE_URL}images/mango.png`} alt="Mango Pickle" className="product-image" onError={(e) => e.target.src = 'https://images.unsplash.com/photo-1596647970717-3d9fc2c1e8d9?q=80&w=600&auto=format&fit=crop'} />
               </div>
               <div className="product-content">
                 <h3 className="product-title">Spicy Mango</h3>
